@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-    background-color: #6a3f1a; /* Cor de fundo ao passar o mouse */
+    background-color: #de8e37; /* Cor de fundo ao passar o mouse */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
     transform: translateY(-2px); /* Leve elevação ao passar o mouse */
 }
