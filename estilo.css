@@ -16,8 +16,29 @@ body {
 
 a {
     margin: 0 10px;
-    color: #542f0c;
+    padding: 10px 30px;
+    color: #f4f0e5;
+    border-radius: 25px;
+    background-color: #542f0c;
+    text-decoration: none;
+
+    display: inline-block; /* Para garantir que o link se comporte como um botão */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
 }
+
+a:hover {
+    background-color: #6a3f1a; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+a:active {
+    background-color: #442108; /* Cor de fundo ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao clicar */
+    transform: translateY(0); /* Retorno à posição original ao clicar */
+}
+
+
 
 h1 {
     font-size: 28px;
