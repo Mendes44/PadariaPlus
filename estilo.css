@@ -21,6 +21,7 @@ a {
     border-radius: 25px;
     background-color: #542f0c;
     text-decoration: none;
+    cursor: pointer;
 
     display: inline-block; /* Para garantir que o link se comporte como um botão */
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
@@ -88,4 +89,43 @@ h2 {
 
 span {
     font-weight: bold;
+}
+
+/* Botão de Voltar para o Topo */
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #542f0c;
+    color: #f4f0e5;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block; /* Começa oculto */
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+
+.voltar-topo:hover {
+    background-color: #de8e37;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.voltar-topo:active {
+    background-color: #e9d1b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+/* Exibir o botão quando a página é rolada */
+body:target .voltar-topo {
+    display: block;
+}
+
+/* Exibir o botão de forma suave */
+body:target .voltar-topo {
+    opacity: 1; /* Torna o botão visível */
 }
